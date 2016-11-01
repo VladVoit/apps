@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Products list</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="confirmation-message hiden">
+		<div class="header-mess">Confirmation message</div>
+		<div class="wrap">
+			<div class="row">
+				<div class="confirmation-text">Are you realy want delete <span class="product-name"></span> ?</div>
+				<div class="col-md-6">
+					<button id="confirm" class="btn btn-primary btn-danger">Ok</button>
+				</div>
+				<div class="col-md-6">
+					<button id="cancel-confirm" class="btn btn-primary btn-success">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="overlay hiden"></div>
+	<div class="wrap-page">
+		<div class="wrap-add-form">
+			<p class="error"></p>
+			<div class="form-group">
+		    	<label for="exampleInputEmail1">Product title</label>
+		    	<input type="text" class="form-control" id="product-title" placeholder="Enter title">
+		  	</div>
+		  	<div class="form-group">
+		    	<label for="exampleInputEmail1">Product sku</label>
+		    	<input type="text" class="form-control" id="product-sku" placeholder="Enter sku">
+		  	</div>
+		  	<div class="form-group">
+		    	<label for="exampleInputEmail1">Product price</label>
+		    	<input type="text" class="form-control" id="product-price" placeholder="Enter price">
+		  	</div>
+			<button class="btn btn-success send">Ok</button>
+			<button class="btn btn-warning cancel">Cancel</button>
+		</div>
+		<div class="container">
+			<div class="row wrap-buttons">
+				<div class="col-md-12">
+					<button class="add_product btn btn-primary btn-success">Add/Edit form</button>
+					<button class="export_product btn btn-primary btn-success" disabled>Export to JSON</button>
+				</div>
+			</div>
+			<div class="row wrap-table">
+				<div class="col-md-12 table hiden">
+					<table class="table table-bordered table-hover">
+						<thead>
+							<tr>
+								<td>Title</td>
+								<td>Sku</td>
+								<td>Price</td>
+								<td>Edit</td>
+								<td>Delete</td>
+							</tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</div>
+				<div class="col-md-12 no-result">
+					<img src="img/blank.jpg" alt="There are no products. Please add new product.">
+				</div>
+			</div>
+		</div>
+
+		</div>
+	</div>
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Knockout</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="container content">
+            <div class="col-md-12 add-control">
+                <input class="input-xxlarge form-control" type="text" id="addTask" placeholder="Add task">
+            </div>
+            <div class="col-md-12">
+                <table class="table table-bordered table-hover table-stripped">
+                    <thead>
+                        <tr>
+                            <td>ID</td>
+                            <td>Task Name</td>
+                            <td>Task Time</td>
+                            <td>Delete Task</td>
+                        </tr>
+                    </thead>   
+                    <tbody  data-bind='foreach: taskList'>
+                        <tr>
+                            <td data-bind='text: $index() + 1'></td>
+                            <td data-bind='text: tname'></td>
+                            <td data-bind='text: ttime'></td>
+                            <td>
+                                <a href="#" class='icon-remove' data-bind='click: $root.deleteItem'>Delete</i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="total-time">Total time: <span data-bind='text: totalTime'></span></p>
+            </div>
+        </div>
+
+
+
+
+        
+        
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>

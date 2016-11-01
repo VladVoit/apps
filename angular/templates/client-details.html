@@ -1,0 +1,115 @@
+<h4 class="page-title client">
+	<strong><span ng-bind="CurrentClient.name"></span></strong>
+	<div class="wrap-action-btns">
+		<button type="button" class="btn btn-info">Submit</button>
+		<button type="button" class="btn btn-warning">Request Edits</button>
+		<button type="button" class="btn btn-success" ng-click="redirectToEditMode(CurrentClient.id)">Edit</button>
+	</div>
+</h4>
+<div class="client-info">
+	<div class="row">
+		<div class="col-md-4">
+			<img ng-src="{{CurrentClient.img}}" alt="Client picture" />
+		</div>
+		<div class="col-md-8">
+			<div class="form-group">
+			    <label class="input-label">Full Name</label>
+			    <p class="input-val" ng-bind="CurrentClient.name"></p>
+		  	</div>
+	  	</div>
+	  	<div class="col-md-8">
+			<div class="form-group">
+			    <label class="input-label">Gender</label>
+			    <p class="input-val" ng-bind="CurrentClient.gender"></p>
+		  	</div>
+		</div>
+	  	<div class="col-md-8">
+			<div class="form-group">
+			    <label class="input-label">Age</label>
+			    <p class="input-val" ng-bind="CurrentClient.age"></p>
+		  	</div>
+		</div>
+	</div>
+
+
+	<div class="row">
+		<h3 class="section-title">Contact info</h3>
+	  	<div class="col-md-4">
+			<div class="form-group">
+			    <label class="input-label">Login</label>
+			    <p class="input-val" ng-bind="CurrentClient.username"></p>
+		  	</div>
+	  	</div>
+		<div class="col-md-4">
+			<div class="form-group">
+			    <label class="input-label">Phone</label>
+			    <p class="input-val" ng-bind="CurrentClient.phone"></p>
+		  	</div>
+	  	</div>
+	  	<div class="col-md-4">
+			<div class="form-group">
+			    <label class="input-label">Email</label>
+			    <p class="input-val" ng-bind="CurrentClient.email"></p>
+		  	</div>
+	  	</div>
+	</div>
+	<div class="row">
+		<h3 class="section-title">Address</h3>
+	  	<div class="col-md-4">
+			<div class="form-group">
+			    <label class="input-label">City</label>
+			    <p class="input-val" ng-bind="CurrentClient.city"></p>
+		  	</div>
+		</div>
+		<div class="col-md-4">
+			<div class="form-group">
+			    <label class="input-label">Address</label>
+			    <p class="input-val" ng-bind="CurrentClient.address"></p>
+		  	</div>
+	  	</div>
+	</div>
+	<div class="row">
+		<h3 class="section-title">Work</h3>
+		<div class="col-md-4">
+			<div class="form-group">
+			    <label class="input-label">Company</label>
+			    <p class="input-val" ng-bind="CurrentClient.company"></p>
+		  	</div>
+		</div>
+		<div class="col-md-4">
+			<div class="form-group">
+			    <label class="input-label">Position</label>
+			    <p class="input-val" ng-bind="CurrentClient.job"></p>
+		  	</div>
+	  	</div>
+	</div>
+	<div class="row">
+		<h3 class="section-title">Bank info</h3>
+		<div class="col-md-4">
+			<div class="form-group">
+			    <label class="input-label">Credit card type</label>
+			    <p class="input-val" ng-bind="CurrentClient.creditCardType"></p>
+		  	</div>
+		</div>
+		<div class="col-md-4">
+			<div class="form-group">
+			    <label class="input-label">Credit card number</label>
+			    <p class="input-val" ng-bind="CurrentClient.creditCardNumber"></p>
+		  	</div>
+	  	</div>
+		<div class="col-md-4">
+			<div class="form-group">
+			    <label class="input-label">Balance</label>
+			    <p class="input-val" ng-bind="CurrentClient.balance"></p>
+		  	</div>
+	  	</div>
+	</div>
+	<div class="row">
+		<h3 class="section-title">About</h3>
+	  	<div class="col-md-12">
+			<div class="form-group">
+			    <p class="input-val" ng-bind="CurrentClient.about"></p>
+		  	</div>
+		</div>
+	</div>
+</div>

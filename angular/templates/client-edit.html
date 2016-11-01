@@ -1,0 +1,120 @@
+<h4 class="page-title client">
+	<strong><span ng-bind="client.name"></span></strong>
+	<div class="wrap-action-btns">
+		<button type="button" class="btn btn-info" ng-click="cancelEdit()">Cancel</button>
+		<button type="button" class="btn btn-success">Save</button>
+	</div>
+</h4>
+<div class="client-info">
+	<div class="row">
+		<div class="col-md-4">
+			<img ng-src="{{client.img}}" alt="Client picture" />
+		</div>
+		<div class="col-md-8">
+			<div class="form-group">
+			    <label class="input-label" ng-class="{'required': client.name.length == 0}">Full Name</label>
+			    <span class="required-icon">*</span>
+			   	<input class="form-control" ng-class="{'required': client.name.length == 0}" type="text" ng-model="client.name">
+		  	</div>
+	  	</div>
+	  	<div class="col-md-8">
+			<div class="form-group">
+			    <label class="input-label" ng-class="{'required': client.gender.length == 0}">Gender</label>
+			    <span class="required-icon">*</span>
+			    <input class="form-control" type="text" ng-class="{'required': client.gender.length == 0}" ng-model="client.gender">
+		  	</div>
+		</div>
+	  	<div class="col-md-8">
+			<div class="form-group">
+			    <label class="input-label" ng-class="{'required': client.age.length == 0}">Age</label>
+			    <span class="required-icon">*</span>
+			    <input class="form-control" type="text" ng-class="{'required': client.age.length == 0}" ng-model="client.age">
+		  	</div>
+		</div>
+	</div>
+
+
+	<div class="row">
+		<h3 class="section-title">Contact info</h3>
+	  	<div class="col-md-4">
+			<div class="form-group">
+			    <label class="input-label" ng-class="{'required': client.username.length == 0}">Login</label>
+			    <span class="required-icon">*</span>
+			    <input class="form-control" type="text" ng-class="{'required': client.username.length == 0}" ng-model="client.username">
+		  	</div>
+	  	</div>
+		<div class="col-md-4">
+			<div class="form-group">
+			    <label class="input-label" ng-class="{'required': client.phone.length == 0}">Phone</label>
+			    <span class="required-icon">*</span>
+			    <input class="form-control" type="text" ng-class="{'required': client.phone.length == 0}" ng-model="client.phone">
+		  	</div>
+	  	</div>
+	  	<div class="col-md-4">
+			<div class="form-group">
+			    <label class="input-label" ng-class="{'required': client.email.length == 0}">Email</label>
+			    <span class="required-icon">*</span>
+			    <input class="form-control" type="text" ng-class="{'required': client.email.length == 0}" ng-model="client.email">
+		  	</div>
+	  	</div>
+	</div>
+	<div class="row">
+		<h3 class="section-title">Address</h3>
+	  	<div class="col-md-4">
+			<div class="form-group">
+			    <label class="input-label">City</label>
+			    <input class="form-control" type="text" ng-model="client.city">
+		  	</div>
+		</div>
+		<div class="col-md-4">
+			<div class="form-group">
+			    <label class="input-label">Address</label>
+			    <input class="form-control" type="text" ng-model="client.address">
+		  	</div>
+	  	</div>
+	</div>
+	<div class="row">
+		<h3 class="section-title">Work</h3>
+		<div class="col-md-4">
+			<div class="form-group">
+			    <label class="input-label">Company</label>
+			    <input class="form-control" type="text" ng-model="client.company">
+		  	</div>
+		</div>
+		<div class="col-md-4">
+			<div class="form-group">
+			    <label class="input-label">Position</label>
+			    <input class="form-control" type="text" ng-model="client.job">
+		  	</div>
+	  	</div>
+	</div>
+	<div class="row">
+		<h3 class="section-title">Bank info</h3>
+		<div class="col-md-4">
+			<div class="form-group">
+			    <label class="input-label">Credit card type</label>
+			    <input class="form-control" type="text" ng-model="client.creditCardType">
+		  	</div>
+		</div>
+		<div class="col-md-4">
+			<div class="form-group">
+			    <label class="input-label">Credit card number</label>
+			    <input class="form-control" type="text" ng-model="client.creditCardNumber">
+		  	</div>
+	  	</div>
+		<div class="col-md-4">
+			<div class="form-group">
+			    <label class="input-label">Balance</label>
+			    <input class="form-control" type="text" ng-model="client.balance">
+		  	</div>
+	  	</div>
+	</div>
+	<div class="row">
+		<h3 class="section-title">About</h3>
+	  	<div class="col-md-12">
+			<div class="form-group">
+			    <textarea class="form-control" name="" id="" cols="30" rows="10" ng-model="client.about"></textarea>
+		  	</div>
+		</div>
+	</div>
+</div>

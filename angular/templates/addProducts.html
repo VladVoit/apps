@@ -1,0 +1,52 @@
+<div class="col-md-5">
+  <h4>Add product</h4>
+  <form role="form" class="form-horizontal">
+    <div class="form-group">
+      <label for="sku">SKU</label>
+      <input type="text" class="form-control input-sm" id="sku">
+    </div>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control input-sm" id="name">
+    </div>
+    <div class="form-group">
+      <label for="price">Price</label>
+      <input type="text" class="form-control input-sm" id="price">
+    </div>
+    <div class="form-group">
+      <label for="size">Size</label>
+      <input type="text" class="form-control input-sm" id="size">
+    </div>
+    <div class="form-group">
+      <label for="desc">Description</label>
+      <textarea class="form-control input-sm" id="desc" cols="10" rows="5"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="productCategory">Product Category</label>
+      <select name="" id="productCategory" class="form-control input-sm">
+        <option value="0">No Category</option>
+        <option value="1">Computers</option>
+        <option value="2">Photo</option>
+      </select>
+    </div>
+    
+    <div><strong>Product Type</strong></div>
+    <div class="radio">
+      <label><input type="radio" name="productType" value="new">Novelty</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="productType" value="old">Old</label>
+    </div>
+    <div><strong>Admin options</strong></div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="adedByAdmin">Aded by Admin</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="signature">Admin Signature</label>
+    </div>
+    <div class="buttons-wrap">
+      <button type="submit" class="btn btn-success">Add product</button>
+      <button type="button" class="btn btn-warning">Clear</button>
+    </div>
+  </form>
+</div>

@@ -1,7 +1,0 @@
-app.controller('AboutCtrl', ['$scope', '$rootScope', '$http', '$location', 
-	function($scope, $rootScope, $http, $location){
-	$scope.pageHeader = 'About';
-	$rootScope.currentPage = "about";
-	$scope.aboutProj = 'Ideological considerations of the highest order, as well as strengthening and development of the structure provides a wide range of (specialist) participated in the formation of substantial financial and administrative conditions. Likewise, permanent quantitative growth and scope of our activity plays an important role in the formation of the new proposals. The importance of these issues is so obvious that the strengthening and development of the structure allows you to perform important tasks for the development of personnel training, meets the pressing needs. On the other hand the constant information and propaganda support of our activity contributes to the preparation and implementation of the development model. Everyday experience shows that the beginning of the daily work for the formation positions require determination and refinement of teaching staff meets basic needs. Comrades! strengthening and development of the structure allows to perform important tasks for the development of new proposals.';
-	
-}]);
